@@ -1,0 +1,106 @@
+.app {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+.header,
+.footer {
+    background: #111;
+    color: white;
+}
+
+.content {
+    background: white;
+    margin-bottom: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-link {
+    color: white;
+    text-decoration-line: none;
+    padding-left: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.artists {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, auto);
+}
+
+.artist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.artist-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.artist-name, .artist-genres, .track-name, .track-genres {
+    margin: 5px;
+}
+
+.tracks {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, auto);
+}
+
+.tracks-track {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.track-image {
+    width: 150px;
+    height: 150px;
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    margin: 20px 0px;
+}
+
+.footer-navBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.footer-languages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
