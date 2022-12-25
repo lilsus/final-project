@@ -18,7 +18,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
 }
 
 .header-nav {
@@ -37,48 +36,47 @@ h1, h2 {
     text-align: center;
 }
 
-.artists {
+.artists, .albums {
     display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(5, auto);
-}
-
-.artist {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(4, auto);
     justify-content: center;
+    align-items: center;
 }
 
-.artist-image {
+.artists-artist, .albums-album {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: url("../public/artist.webp");
+    background-size: contain;
 }
 
-.artist-name, .artist-genres, .track-name, .track-genres {
-    margin: 5px;
+.artist-name, .artist-listeners, .album-name, .album-artist {
+    color: white;
+    margin: 0;
+}
+
+.artist-name, .album-name {
+    font-size: 17px;
 }
 
 .tracks {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(4, auto);
+    display: flex;
+    flex-direction: column;
 }
 
 .tracks-track {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .track-image {
-    width: 150px;
-    height: 150px;
-}
-
-.track-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    width: 25px;
+    height: 25px;
 }
 
 .footer-nav {
