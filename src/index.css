@@ -40,13 +40,13 @@ h1, h2 {
 .artists {
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(5, 20%);
 }
 
-.artist {
+.artists-artist {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .artist-image {
@@ -61,13 +61,15 @@ h1, h2 {
 
 .tracks {
     display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(4, auto);
+    justify-items: start;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
 }
 
 .tracks-track {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .track-image {
