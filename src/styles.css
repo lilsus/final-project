@@ -40,13 +40,13 @@ h1, h2 {
 .artists {
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(5, auto);
+    grid-template-columns: repeat(5, 20%);
 }
 
-.artist {
+.artists-artist {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .artist-image {
@@ -61,13 +61,15 @@ h1, h2 {
 
 .tracks {
     display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(4, auto);
+    justify-items: start;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
 }
 
 .tracks-track {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .track-image {
@@ -104,4 +106,56 @@ h1, h2 {
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 10px;
+}
+
+.search {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.search-artists, .search-albums {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    justify-content: center;
+}
+
+.search-artists-artist, .search-albums-album {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.search-artist-info, .search-album-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.search-artist-name, .search-artist-listeners, .search-album-name, .search-album-artist {
+    color: white;
+    margin: 0;
+}
+
+.search-artist-name, .search-album-name {
+    font-size: 17px;
+}
+
+.search-tracks {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-tracks-track {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    justify-items: center;
+    align-items: center;
+}
+
+.search-track-image {
+    width: 25px;
+    height: 25px;
 }
